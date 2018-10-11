@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Marvel.Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,7 +14,7 @@ namespace Marvel
 		{
 			InitializeComponent();
 
-			MainPage = new Marvel.MainPage();
+            MainPage = new CharactersPage();
 		}
 
 		protected override void OnStart ()
