@@ -13,6 +13,7 @@ namespace Marvel.ViewModels
             this.Characters = new CharactersViewModel();
         }
         public CharactersViewModel Characters { get; set; }
+        public CharacterViewModel Character { get; set; }
         public IEnumerable<CharacterItemViewModel> CharactersList { get; set; }
 
 

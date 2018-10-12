@@ -14,7 +14,7 @@ namespace Marvel
 		{
 			InitializeComponent();
 
-            MainPage = new CharactersPage();
+            MainPage = new NavigationPage(new CharactersPage());
 		}
 
 		protected override void OnStart ()

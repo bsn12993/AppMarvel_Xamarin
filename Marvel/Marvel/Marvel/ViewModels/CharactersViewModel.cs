@@ -108,7 +108,6 @@ namespace Marvel.ViewModels
                 this.Characters = new ObservableCollection<CharacterItemViewModel>(MainViewModel.GetInstance().CharactersList.Where(c => c.name.ToLower().Contains(this.Filter.ToLower())));
             }
         }
-
         #endregion
 
         #region Commands
