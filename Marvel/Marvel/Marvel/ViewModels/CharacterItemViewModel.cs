@@ -21,7 +21,8 @@ namespace Marvel.ViewModels
         private async void SelectedCharacter()
         {
             MainViewModel.GetInstance().Character = new CharacterViewModel(this);
-            await Application.Current.MainPage.Navigation.PushAsync(new CharacterPage());
+            //await Application.Current.MainPage.Navigation.PushAsync(new CharacterPage());
+            await Application.Current.MainPage.Navigation.PushAsync(new CharacterTabbedPage());
         }
     }
 }
