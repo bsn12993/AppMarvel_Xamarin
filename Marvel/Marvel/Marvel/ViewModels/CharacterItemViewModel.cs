@@ -7,5 +7,6 @@ namespace Marvel.ViewModels
 {
     public class CharacterItemViewModel : Result
     {
+        public string image { get; set; }
     }
 }
