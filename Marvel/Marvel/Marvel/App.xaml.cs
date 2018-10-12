@@ -10,11 +10,13 @@ namespace Marvel
 {
 	public partial class App : Application
 	{
-		public App ()
+        public static object Navigator { get; internal set; }
+
+        public App ()
 		{
 			InitializeComponent();
 
-            MainPage = new NavigationPage(new CharactersPage());
+            MainPage = new MasterPage();
 		}
 
 		protected override void OnStart ()
