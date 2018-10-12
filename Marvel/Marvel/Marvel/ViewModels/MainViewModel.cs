@@ -9,8 +9,8 @@ namespace Marvel.ViewModels
     {
         public MainViewModel()
         {
-            this.Character = new CharactersViewModel();
+            this.Characters = new CharactersViewModel();
         }
-       public CharactersViewModel Character { get; set; }
+       public CharactersViewModel Characters { get; set; }
     }
 }
