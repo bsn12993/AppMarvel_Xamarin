@@ -1,0 +1,14 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Marvel.ViewModels
+{
+    public class MenuViewModel
+    {
+        public string Title { get; set; }
+        public string Icon { get; set; }
+        public string PageName { get; set; }
+
+    }
+}

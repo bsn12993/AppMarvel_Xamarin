@@ -11,10 +11,13 @@ namespace Marvel.ViewModels
         {
             instance = this;
             this.Characters = new CharactersViewModel();
+            this.LoadMenu();
         }
+
         public CharactersViewModel Characters { get; set; }
         public CharacterViewModel Character { get; set; }
         public IEnumerable<CharacterItemViewModel> CharactersList { get; set; }
+        public ObservableCollection<MenuViewModel> Menu { get; set; }
 
 
         #region Singleton
@@ -25,6 +28,18 @@ namespace Marvel.ViewModels
             else return instance;
         }
         #endregion
+
+        private void LoadMenu()
+        {
+            this.Menu = new ObservableCollection<MenuViewModel>();
+            this.Menu.Add(new MenuViewModel
+            {
+                Title = "Characters",
+                Icon = "",
+                PageName = "CharactersPage"
+            });
+        }
+
 
     }
 }
