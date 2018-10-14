@@ -42,6 +42,34 @@ namespace Marvel.ViewModels
                 Icon = "",
                 PageName = "CharactersPage"
             });
+
+            this.Menu.Add(new MenuViewModel
+            {
+                Title = "Comics",
+                Icon = "",
+                PageName = "CharactersPage"
+            });
+
+            this.Menu.Add(new MenuViewModel
+            {
+                Title = "Events",
+                Icon = "",
+                PageName = "CharactersPage"
+            });
+
+            this.Menu.Add(new MenuViewModel
+            {
+                Title = "Stories",
+                Icon = "",
+                PageName = "CharactersPage"
+            });
+
+            this.Menu.Add(new MenuViewModel
+            {
+                Title = "Series",
+                Icon = "",
+                PageName = "CharactersPage"
+            });
         }
         #endregion
 

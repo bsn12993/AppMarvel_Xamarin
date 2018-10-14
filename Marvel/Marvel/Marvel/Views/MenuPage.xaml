@@ -6,6 +6,7 @@
              Title="Marvel">
     <ContentPage.Content>
         <StackLayout
+            BackgroundColor="DarkRed"
             Padding="5,20,5,5">
             <ListView
                 ItemsSource="{Binding Menu}">
@@ -19,7 +20,7 @@
                                 </Grid.ColumnDefinitions>
                                 <Label
                                     Grid.Column="1"
-                                    TextColor="Black"
+                                    TextColor="White"
                                     VerticalOptions="Center"
                                     Text="{Binding Title}"/>
                             </Grid>
