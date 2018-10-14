@@ -7,11 +7,15 @@ namespace Marvel.Infrastructure
 {
     public class InstanceLocator
     {
+        #region Constructors
         public InstanceLocator()
         {
             this.Main = new MainViewModel();
         }
+        #endregion
 
+        #region Properties
         public MainViewModel Main { get; set; }
+        #endregion
     }
 }

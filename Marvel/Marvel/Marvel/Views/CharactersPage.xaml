@@ -7,12 +7,10 @@
         <StackLayout
             BindingContext="{Binding Characters}">
             <SearchBar
-                BackgroundColor="Silver"
                 Text="{Binding Filter,Mode=TwoWay}"
                 Placeholder="Search..."
                 SearchCommand="{Binding SearchCommand}"/>
             <ListView
-                BackgroundColor="Silver"
                 HasUnevenRows="True"
                 IsRefreshing="{Binding IsRefreshing,Mode=TwoWay}"
                 IsPullToRefreshEnabled="True"
