@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Marvel.Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,11 +10,13 @@ namespace Marvel
 {
 	public partial class App : Application
 	{
-		public App ()
+        public static object Navigator { get; internal set; }
+
+        public App ()
 		{
 			InitializeComponent();
 
-			MainPage = new Marvel.MainPage();
+            MainPage = new MasterPage();
 		}
 
 		protected override void OnStart ()

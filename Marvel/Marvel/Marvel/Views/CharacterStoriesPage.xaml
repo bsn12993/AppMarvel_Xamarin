@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BindingContext="{Binding Main,Source={StaticResource Locator}}"
+             x:Class="Marvel.Views.CharacterStoriesPage"
+             Title="Character Stories">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout
+                BindingContext="{Binding Character}"
+                Padding="5">
+                <Label
+                    FontAttributes="Bold"
+                    FontSize="Large"
+                    TextColor="Black"
+                    HorizontalOptions="Center"
+                    Text="{Binding Character.name}"/>
+                <Image
+                    Source="{Binding Character.image}"/>
+                <ListView
+                    HasUnevenRows="True"
+                    ItemsSource="{Binding Stories.items}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="2*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Label
+                                        Grid.Column="0"
+                                        TextColor="Black"
+                                        Text="Serie Name:"/>
+                                    <Label
+                                        Grid.Column="1"
+                                        TextColor="Black"
+                                        Text="{Binding name}"/>
+                                    <Label
+                                        Grid.Column="2"
+                                        TextColor="Black"
+                                        Text="{Binding type}"/>
+                                </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
