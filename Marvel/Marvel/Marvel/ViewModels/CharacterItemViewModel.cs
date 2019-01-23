@@ -25,9 +25,9 @@ namespace Marvel.ViewModels
         #region Methods
         private async void SelectedCharacter()
         {
+            App.Master.IsPresented = false;
             MainViewModel.GetInstance().Character = new CharacterViewModel(this);
-            //await Application.Current.MainPage.Navigation.PushAsync(new CharacterPage());
-            await Application.Current.MainPage.Navigation.PushAsync(new CharacterTabbedPage());
+            await App.Navigator.PushAsync(new CharacterPage());
         }
         #endregion
     }
